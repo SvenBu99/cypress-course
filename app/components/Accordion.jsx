@@ -10,7 +10,11 @@ export default function ItemsAccordion({ items }) {
     <div style={{ maxWidth: "70vw", minWidth: "50vw" }}>
       {items.map((item) => {
         return (
-          <Accordion key={item.id} data-cy="accordion-item">
+          <Accordion
+            data-test={`accordion-item-${item.id}`}
+            key={item.id}
+            data-cy="accordion-item"
+          >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               id="panel1a-header"
