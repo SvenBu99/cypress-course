@@ -10,3 +10,10 @@
 .header {
   margin-bottom: 20px;
 }
+
+.button {
+  margin: 20px;
+  width: 64px;
+  height: 32px;
+  border-radius: 8px;
+}
